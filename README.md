@@ -114,3 +114,4 @@ Prepared for a GitHub-ready portfolio structure based on the existing project wo
 - `node_modules/` and `.env` are intentionally ignored through `.gitignore`
 - The root SQL files are preserved, but the recommended long-term home is `database/`
 - The backend now reads database settings from environment variables with safe defaults for local development
+- Text files are normalized with `.gitattributes` so Git handles line endings consistently across Windows and non-Windows machines

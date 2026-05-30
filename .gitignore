@@ -19,3 +19,8 @@ desktop.ini
 *.swp
 *.swo
 *.bak
+
+# Legacy root backups kept locally but not published
+/db.js
+/SQL Code for FSDL Project.sql
+/SQL Code for learning platform.sql
