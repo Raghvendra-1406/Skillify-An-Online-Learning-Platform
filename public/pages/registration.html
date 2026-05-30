@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>🎓Skillify</h1>
+    </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+	        <a href="registration.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="admin_login.html">Admin</a>
+        </nav>
+    </header>
+
+    <div class="auth-wrapper"><div class="container">
+        <h2>Register</h2>
+        <form id="registration-form">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" placeholder="Username" required>
+
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" placeholder="Email" required>
+
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" placeholder="Password" required>
+
+                <label for="reg-confirm-password">Confirm Password:</label>
+                <input type="password" id="reg-confirm-password" placeholder="Confirm Password" required>
+
+                <label for="reg-date-of-birth">Date of Birth:</label>
+                <input type="date" id="reg-date-of-birth" name="reg-date-of-birth" required>
+
+                <label for="reg-interests">Interests/Learning Goals (Optional):</label>
+                <textarea id="reg-interests" name="reg-interests" placeholder="e.g., Web Development, Data Science"></textarea>
+
+                <input type="hidden" id="reg-role" value="student">
+		
+		<button type="submit">Register</button>
+                        
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <div id="reg-message"></div>
+    </div><!-- Closing div for .auth-wrapper -->
+</div> 
+<script src="../js/register_login.js" defer></script>    
+</body>
+</html>

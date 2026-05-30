@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses</title>
+    <link rel="stylesheet" href="../css/admin_dashboard.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin_dashboard.html">Dashboard</a>
+            <a href="#" id="logout">Logout</a>
+        </nav>
+    </header>
+    <h2>⚙️Manage Courses</h2>
+
+    <button onclick="viewCourses()">View Courses</button>
+    <button onclick="showAddCourseForm()">Add Course</button>
+    <button onclick="showDeleteCourseForm()">Delete Course</button>
+    
+
+    <div id="content"></div>
+
+    <!-- Delete Course Section -->
+    <div id="deleteCourseSection" style="display: none;">
+        <h3>Delete a Course</h3>
+        <select id="courseList">
+            <option value="">Select a Course</option>
+        </select>
+        <button onclick="deleteSelectedCourse()">Delete Course</button>
+        <p id="deleteMessage"></p>
+    </div>
+
+    <br>
+    <button onclick="location.href='admin_dashboard.html'">Back to Dashboard</button>
+    
+<script src="../js/manage_courses.js" defer></script>
+</body>
+</html>

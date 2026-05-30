@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e1e1e1;
+    opacity: 0.8;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+/* Button Styles */
+.container button {
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 10px;
+    align-items: center;
+}
+
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Admin Content */
+#admin-content {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ecf0f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete Button */
+li button {
+    background: #e74c3c;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+li button:hover {
+    background: #c0392b;
+}
+
+/*Table to show student Registrations */
+th {
+    color: white;
+}
+
+.delete-btn {
+    border-radius: 4px !important;
+    color: white !important;
+    background-color: red !important;
+    padding: 8px 12px !important;
+    margin: auto !important;
+    border: none !important;  /* Remove default border */
+    cursor: pointer !important; /* Pointer on hover */
+    width: 100% !important;
+}
+
+
+
+/*Manage Courses*/
+
+h2, h3 {
+    margin-left: 2px;
+}
+
+#content {
+    width: 50%;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    align-items: flex-start;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.course-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+#courseSelect {
+    padding: 10px;
+}
+

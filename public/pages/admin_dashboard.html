@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin_dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin_dashboard.html">Dashboard</a>
+            <a href="#" id="logout">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Welcome, Admin</h2>
+        <div class="admin-actions">
+            <div id="usersTable"></div>
+            <button onclick="toggleUsers()">Manage Users</button>
+
+            <button onclick="viewRegistrations()">View Student Registrations</button>
+            <div id="registrationsTable" style="margin-top: 20px;"></div>
+
+            <button onclick="location.href='manage_courses.html'">Manage courses</button>
+        </div>
+
+        <div id="admin-content"></div> <!-- Content will be updated dynamically -->
+    </div>
+
+    <script src="../js/admin_dashboard.js"></script>
+</body>
+</html>
