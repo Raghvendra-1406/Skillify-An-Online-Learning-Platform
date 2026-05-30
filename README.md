@@ -105,9 +105,7 @@ Full Stack Development Project/
 - Add automated tests and a linting workflow
 - Add a centralized `assets/` structure if the static frontend grows further
 
-## Author
 
-Prepared for a GitHub-ready portfolio structure based on the existing project workspace.
 
 ## Repository Hygiene Notes
 
